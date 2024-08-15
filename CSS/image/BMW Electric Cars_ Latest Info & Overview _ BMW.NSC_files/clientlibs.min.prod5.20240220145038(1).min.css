@@ -1,0 +1,35 @@
+.ds2-accordion--element .ds2-icon--plus-white,.ds2-accordion--element .ds2-icon--plus-white::after,.ds2-accordion--element .ds2-icon--plus-white::before,.ds2-accordion--element-author .ds2-icon--plus-white,.ds2-accordion--element-author .ds2-icon--plus-white::after,.ds2-accordion--element-author .ds2-icon--plus-white::before{background-color:#fff;background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%234d4d4d%22%20d%3D%22M11.997%2017l2-2%206%206.002%206-6%202%202-8%208z%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat}
+.ds2-accordion--element .ds2-icon--minus-white,.ds2-accordion--element .ds2-icon--minus-white::after,.ds2-accordion--element .ds2-icon--minus-white::before,.ds2-accordion--element-author .ds2-icon--minus-white,.ds2-accordion--element-author .ds2-icon--minus-white::after,.ds2-accordion--element-author .ds2-icon--minus-white::before{background-color:#fff;background-image:url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%234d4d4d%22%20d%3D%22M27.998%2023.002l-2%202-6-6-6%206-2-2%208-8z%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat}
+.ds2-accordion--element .ui-state-default,.ds2-accordion--element .ui-widget-content .ui-state-default,.ds2-accordion--element .ui-widget-header .ui-state-default,.ds2-accordion--element-author .ui-state-default,.ds2-accordion--element-author .ui-widget-content .ui-state-default,.ds2-accordion--element-author .ui-widget-header .ui-state-default{background:0;color:#262626}
+.ds2-accordion--element .ui-accordion .ui-accordion-content,.ds2-accordion--element-author .ui-accordion .ui-accordion-content,.ds2-accordion--element-author.ui-accordion .ui-accordion-content,.ds2-accordion--element.ui-accordion .ui-accordion-content{padding:0 !important}
+.ds2-accordion--element .ui-widget-content,.ds2-accordion--element-author .ui-widget-content{border:0}
+.ds2-accordion--element .ui-widget-content a,.ds2-accordion--element-author .ui-widget-content a{color:#666}
+.ds2-accordion--element .ui-widget-content a:active,.ds2-accordion--element .ui-widget-content a:focus,.ds2-accordion--element .ui-widget-content a:hover,.ds2-accordion--element-author .ui-widget-content a:active,.ds2-accordion--element-author .ui-widget-content a:focus,.ds2-accordion--element-author .ui-widget-content a:hover{color:#0653b6}
+.ds2-accordion--element .ui-widget-content a.button,.ds2-accordion--element-author .ui-widget-content a.button{color:#fff}
+.ds2-accordion--element .ui-widget-content a.button:active,.ds2-accordion--element .ui-widget-content a.button:focus,.ds2-accordion--element .ui-widget-content a.button:hover,.ds2-accordion--element-author .ui-widget-content a.button:active,.ds2-accordion--element-author .ui-widget-content a.button:focus,.ds2-accordion--element-author .ui-widget-content a.button:hover{color:#fff}
+.ds2-accordion--element .ds2-accordion--list,.ds2-accordion--element-author .ds2-accordion--list{margin-bottom:15px}
+.ds2-accordion--element .ds2-table-element,.ds2-accordion--element-author .ds2-table-element{margin-bottom:15px;margin-top:30px}
+.ds2-accordion--element .ds2-accordion--list-item,.ds2-accordion--element-author .ds2-accordion--list-item{list-style-type:none;border-bottom:1px solid #e6e6e6;position:relative}
+.ds2-accordion--element .ds2-accordion--list-item:first-child,.ds2-accordion--element-author .ds2-accordion--list-item:first-child{border-top:1px solid #e6e6e6}
+.ds2-accordion--element .ds2-accordion--list-item .ds2-accordion--title .ds2-icon,.ds2-accordion--element-author .ds2-accordion--list-item .ds2-accordion--title .ds2-icon{margin-right:.75rem;margin-top:10px}
+.ds2-accordion--element .ds2-accordion--list-item .ds2-accordion--button,.ds2-accordion--element .ds2-accordion--list-item .ds2-accordion--image,.ds2-accordion--element .ds2-accordion--list-item .ds2-video-player,.ds2-accordion--element-author .ds2-accordion--list-item .ds2-accordion--button,.ds2-accordion--element-author .ds2-accordion--list-item .ds2-accordion--image,.ds2-accordion--element-author .ds2-accordion--list-item .ds2-video-player{margin-bottom:15px}
+.ds2-accordion--element .ds2-accordion--list-item .ds2-accordion--button .ds2-link,.ds2-accordion--element .ds2-accordion--list-item .ds2-accordion--image .ds2-link,.ds2-accordion--element .ds2-accordion--list-item .ds2-video-player .ds2-link,.ds2-accordion--element-author .ds2-accordion--list-item .ds2-accordion--button .ds2-link,.ds2-accordion--element-author .ds2-accordion--list-item .ds2-accordion--image .ds2-link,.ds2-accordion--element-author .ds2-accordion--list-item .ds2-video-player .ds2-link{height:auto}
+.ds2-accordion--element .ds2-accordion--list-item .ds2-accordion--copy,.ds2-accordion--element-author .ds2-accordion--list-item .ds2-accordion--copy{margin-bottom:1rem}
+.ds2-accordion--element .ds2-accordion--list-item .ds2-accordion--title,.ds2-accordion--element-author .ds2-accordion--list-item .ds2-accordion--title{cursor:pointer;border:0;margin:0;padding:20px 0 20px 50px;position:relative}
+.ds2-accordion--link{padding-bottom:3rem}
+@media only screen and (min-width:981px){.ds2-accordion--link{padding-top:0;padding-bottom:2rem}
+}
+.ds2-accordion--link .ds2-linklist,.ds2-accordion--link .ds2-linklist--item:last-child{margin-bottom:0}
+.ds2-accordion--hide-all.disable,.ds2-accordion--show-all.disable{display:none}
+.ds2-accordion--content{overflow:auto}
+.ds2-accordion--content .ds2-accordion--sub-content{margin-bottom:15px}
+.ds2-accordion--keyboard .ds2-accordion--content .ds2-accordion--sub-content{padding-top:10px}
+.ds2-accordion--sub-content{overflow:hidden;padding-left:calc(48.75px + .75rem);padding-right:7.5px;padding-top:5px}
+@media only screen and (max-width:980px){.ds2-accordion--sub-content{padding-left:1px}
+}
+@media only screen and (min-width:981px){.ds2-accordion--sub-content{padding-left:48.75px}
+}
+.ds2-accordion--title .ds2-icon--minus-white{display:none}
+.ds2-accordion--title[aria-selected=true] .ds2-icon--minus-white{display:block}
+.ds2-accordion--title[aria-selected=true] .ds2-icon--plus-white{display:none}
+.ds2-accordion--title.ui-state-active .ui-icon.ui-icon-triangle-1-s{background-image:url(../../../../../etc.clientlibs/clientlibs/granite/jquery-ui/resources/ui-icons_444444_256x240.png)}

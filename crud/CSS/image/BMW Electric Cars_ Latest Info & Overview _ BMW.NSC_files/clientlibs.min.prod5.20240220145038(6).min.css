@@ -1,0 +1,57 @@
+.ds2-model-carousel{overflow:visible;position:relative}
+.ds2-model-carousel .ds2-table-element td{font-weight:400}
+.ds2-model-carousel .ds2-table-element{margin:15px 0}
+.ds2-model-carousel .ds2-disclaimer{margin-top:2rem}
+.ds2-model-carousel .ds2-disclaimer ul,.ds2-model-carousel .ds2-disclaimer ul li{margin-bottom:0}
+.ds2-model-carousel .ds2-buttonlist .columns{padding-left:.53571rem;padding-right:.53571rem}
+.ds2-model-carousel .ds2-buttonlist li .button{margin-bottom:10px}
+@media only screen and (min-width:521px){.ds2-model-carousel .ds2-buttonlist li .button{margin-bottom:0}
+}
+.ds2-model-carousel .ds2-buttonlist li:last-child .button{margin-bottom:0}
+.ds2-model-carousel .slick-next,.ds2-model-carousel .slick-prev{height:40.00005px;min-width:15px;opacity:1;top:0;width:18px;z-index:180;display:none}
+.ds2-model-carousel .slick-next .ds2-icon.ds2-icon--l::before,.ds2-model-carousel .slick-prev .ds2-icon.ds2-icon--l::before{background-color:transparent;background-size:30px;background-position:center;width:30px;height:30px}
+.ds2-model-carousel .slick-next:active .ds2-icon::before,.ds2-model-carousel .slick-next:focus .ds2-icon::before,.ds2-model-carousel .slick-next:hover .ds2-icon::before,.ds2-model-carousel .slick-prev:active .ds2-icon::before,.ds2-model-carousel .slick-prev:focus .ds2-icon::before,.ds2-model-carousel .slick-prev:hover .ds2-icon::before{background-color:transparent}
+@media only screen and (max-width:520px){.ds2-model-carousel .slick-next .ds2-icon.ds2-icon--l::before,.ds2-model-carousel .slick-prev .ds2-icon.ds2-icon--l::before{background-size:30px;background-position:center;width:18px;height:40.00005px}
+}
+@media only screen and (min-width:521px){.ds2-model-carousel .slick-next,.ds2-model-carousel .slick-prev{width:30px;height:30px}
+}
+.ds2-model-carousel .slick-next .ds2-icon,.ds2-model-carousel .slick-prev .ds2-icon{top:0;margin-top:0}
+.ds2-model-carousel .slick-next span,.ds2-model-carousel .slick-prev span{color:#fff;display:block}
+.ds2-model-carousel .slick-prev{left:0}
+@media only screen and (min-width:521px){.ds2-model-carousel .slick-prev{left:10px}
+}
+.ds2-model-carousel .slick-next{right:0}
+@media only screen and (min-width:521px){.ds2-model-carousel .slick-next{right:10px}
+}
+.ds2-model-carousel .ds2-content-slider--description .ds2-expand--body-copy{margin-bottom:2rem}
+.ds2-model-carousel .ds2-content-slider--description>.table .ds2-table-element{margin-top:0}
+.ds2-model-carousel .ds2-content-slider--description>.table .ds2-table-element th{padding-top:0}
+@media only screen and (min-width:521px){.ds2-model-carousel .ds2-content-slider--description>.table .ds2-table-element th{padding-bottom:1rem}
+}
+.ds2-model-carousel .ds2-content-slider--description>.table~.table .ds2-table-element{margin-top:0}
+.ds2-model-carousel .ds2-content-slider--description>.table~.table .ds2-table-element th{padding-top:15px}
+@media only screen and (min-width:521px){.ds2-model-carousel--head{margin-bottom:0}
+}
+.ds2-model-carousel--content-item .ds2-slider--position-bar-outer{display:none}
+.ds2-model-carousel--image-slider{margin-bottom:1rem}
+@media only screen and (min-width:521px){.ds2-model-carousel--image-slider{margin-bottom:2rem}
+}
+.ds2-model-carousel--image-slider .slick-list{width:unset !important;box-sizing:content-box !important}
+.ds2-model-carousel--image-slider .slick-slide{padding:0}
+@media only screen and (min-width:521px){.ds2-model-carousel--image-slider .slick-slide{padding:0 7.5px}
+}
+.ds2-model-carousel--image-slider .slick-slide img{width:100%}
+@media only screen and (min-width:521px){.ds2-model-carousel--image-slider .slick-slide img{cursor:pointer}
+}
+.ds2-model-carousel--image-slider .slick-slide .ds2-model-carousel--move-center,.ds2-model-carousel--image-slider .slick-slide .ds2-model-carousel--move-next,.ds2-model-carousel--image-slider .slick-slide .ds2-model-carousel--move-prev{transition:transform .9s ease}
+.ds2-model-carousel--image-slider .slick-center img{cursor:default}
+.ds2-model-carousel--move-center{transform:scale(1)}
+.ds2-model-carousel--move-prev,html[dir=rtl] .ds2-model-carousel--move-next{transform:translate(25%,-30px) scale(.5)}
+.ds2-model-carousel--move-next,html[dir=rtl] .ds2-model-carousel--move-prev{transform:translate(-25%,-30px) scale(.5)}
+.ds2-model-carousel--content-slider{margin-left:-15px;margin-right:-15px}
+.ds2-model-carousel--content-slider .slick-slide{margin-left:15px;margin-right:15px;margin-bottom:75px}
+@media only screen and (min-width:981px){.ds2-model-carousel--content-slider .slick-slide{margin-bottom:90px}
+}
+.ds2-model-carousel--content-slider .slick-track{margin-top:3px}
+.ds2-model-carousel--content-slider .ds2-content-slider--title{line-height:1.2}
+.ds2-model-carousel--expanded-uppercase .ds2-content-slider--title{line-height:1.2}

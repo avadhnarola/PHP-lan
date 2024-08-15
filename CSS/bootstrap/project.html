@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+        </symbol>
+        <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </symbol>
+        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </symbol>
+      </svg>
+      <link rel="stylesheet" href="project.css">
+
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../webfonts">
+      <link rel="stylesheet" href="../CSS/all.min.css">
+      <link rel="stylesheet" href="../allmin/all.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="main">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#"><img src="../image/logo (2).png" alt=""></a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <img src="../image/flageng.png" alt=""> English
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#"> <img src="../image/flageng.png" alt="">English</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../image/china.jpg" alt="" width="16px" height="11px">Chinese</a></li>
+                  <li><a class="dropdown-item" href="#"><img src="../image/germeny.png" alt="" width="16px" height="11px">Germeny</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-dollar-sign"></i>  USA 
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-dollar-sign"></i> USA</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-euro-sign"></i> EUR</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-sterling-sign"></i> GBP</a></li>
+                </ul>
+              </li>
+            </ul>
+           
+          </div>
+          <font color="#aaaaaa"> Welcome visitor!</font> <br>
+          <br>
+        
+         
+            <div class="right">
+                <a href="" class="text-decoration-none margin"><i class="fa-solid fa-user"></i> My Account</a>
+                <a href="" class="text-decoration-none"><i class="fa-solid fa-heart"></i>Wish lish(0)</a>
+                <a href="" class="text-decoration-none"><i class="fa-solid fa-check"></i>Checkout</a>
+                <a href="" class="text-decoration-none"><i class="fa-solid fa-wifi fa-rotate-by" style="--fa-rotate-angle: 50deg;"></i> 
+                blog</a>
+                <a href="" class="text-decoration-none"><i class="fa-solid fa-unlock"></i>Login</a>
+            </div>            
+         </div>
+         
+        </div>
+      </nav>
+      <!----------------------------------------------------------------------------------------------------->
+
+      <div class="container-fluid back">
+        <div class="row border">
+          <div class="col-8 m-3" >
+            <img src="../image/header2logo.png" alt="">
+          </div>
+          
+          <div class="col  py-3 mx-7">
+         
+            
+            <div class="dropdown">
+              <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-cart-shopping"></i>Shopping cart(0)
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="" href="#">  </a></li>
+                <li><a class="text-decoration-none color" href="#">Your shopping cart is empty!</a></li>
+                <li><a class="dropdown-item" href="#">  </a></li>
+                <li><a class="dropdown-item" href="#">  </a></li>
+                <li class=" border-bottom-width-8"><a href="#"></a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------------------------------------------------------------------------->
+      <ul class="nav nav-tabs back">
+        <li class="nav right">
+          <a class="nav-link" aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item dropdown right">
+          <a class="nav-link dropdown" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">FASHION</a>
+          <ul class="dropdown-menu ">
+            <li><a class="dropdown text-dark text-decoration-none" href="#">APPERAL</a></li>
+            <br>
+            <li><a class="dropdown-item text-decoration-none" href="#">Smart tablet</a></li>
+            <li><a class="dropdown-item text-decoration-none" href="#">Crepe T-shirt</a></li>
+            <li><a class="dropdown-item text-decoration-none" href="#">Leather Watch</a></li>
+            <li><a class="dropdown-item text-decoration-none" href="#">Rolling diamond</a></li>
+            <li class="dropdown-divider"></li>
+            <li class="bg-primary"></li>
+          </ul>
+        </li>
+        <li class="nav-item right">
+          <a class="nav-link" href="#">New Arrivals</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">All Brands</a>
+        </li> -->
+        <li class="nav-item dropdown right">
+          <a class="nav-link dropdown" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">All Brand</a>
+          <ul class="dropdown-menu ">
+            <li><a class="dropdown-item text-decoration-none" href="#">Gadget Zone</a></li>
+            <li><a class="dropdown-item text-decoration-none" href="#">Initech Space</a></li>
+            <li><a class="dropdown-item text-decoration-none" href="#">Looney Tunes</a></li>
+            <li><a class="dropdown-item text-decoration-none" href="#">Massive Dynamic</a></li>
+            <li><a class="dropdown-item text-decoration-none" href="#">Pro Tech geat</a></li>
+            <li><a class="dropdown-item text-decoration-none" href="#">Soyleny Green</a></li>
+            <li><a class="dropdown-item text-decoration-none" href="#">The Simpsons</a></li>
+            <li><a class="dropdown-item text-decoration-none" href="#">Weeds Capital</a></li>
+            <li class="dropdown-divider"></li>
+            <li class="bg-primary"></li>
+          </ul>
+        </li>
+        <li class="nav-item right">
+          <li class="nav-item dropdown right">
+            <a class="nav-link dropdown" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item text-decoration-none" href="#">Best Deals</a></li>
+              <li><a class="dropdown-item text-decoration-none" href="#">Blog</a></li>
+            </ul>
+          </li>  
+          
+        </li>
+      </ul>  
+    <!------------------------------------------------------------------------------------------------->
+        
+    <div class="body">
+      <div class="bigbox">
+       <div class="container w-50 py-3 m-3">
+       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner" style="width: 140%;">
+          <div class="carousel-item active">
+            <img src="../image/pic.jpg" class="d-block w-100" alt="..."  >
+            <div class="box">
+              <div class="slide_content">
+                <div class="hadding">
+                  <div class="hadding_text">
+                    <font size="5" color="black" bold="100" class="div1"> Big Saving Days Sale</font>
+                  </div>
+                  <br>
+                  <div class="sub_hadding">
+                    <font size="6">
+                      Buy Modern Chair  
+                      In <br>
+                      Black Color
+                    </font>
+                  </div>
+                  <div class="offer_text div3">
+                  <font size="4">  "Stating At Only"
+                    <span class="color">$99.00</span></font>
+                  </div> <br>
+                  <div class="botton-shopnow div4">
+                    <a href="" class="btn btn-danger"> Shop now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="carousel-item">
+            <img src="../image/pic2.jpg" class="d-block w-100" alt="...">
+            <div class="box">
+              <div class="slide_content">
+                <div class="haddings">
+                  <div class="headding_text">
+                   <font size="5" color="black" bold="100" class="div1"> Big Saving Days Sale</font>
+                  </div>
+                  <br>
+                  <div class="sub_hadding">
+                   <font size="6" class="div2">
+                    "Women Solid Round" <br>
+                    <span>Green T-shirt</span>
+                   </font>
+                  </div>
+                  <div class="offer_text div3">
+                  <font size="4">
+                    "Stating At Only"
+                    <span class="color">$59.00</span>
+                  </font>
+                  </div>
+                  <br>
+                  <div class="botton-shopnow div4">
+                    <a href="" class="btn btn-danger"> Shop now</a>
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+      <div class="main2">
+      <div class="sidebox">
+        <!-- <a href="" class="pic2"><img src="../image/pic3.jpg" alt="" width="279px" height="188px"></a> -->
+        <a href="" class="pic1 m-1"><img src="../image/pic3.jpg" alt="" width="279px" height="188px"></a> 
+        
+        <div class="box2">
+          <div class="slide_content">
+            <div class="haddings">
+              <div class="headding_text">
+               <font size="4" style="font-size: 21px;"><b> Samsung Gear <br>
+                VR Camera</b></font>
+              </div>
+              
+              <div class="offer_text  mt-3">
+                <font size="4">
+                  <span class="color">$129.00</span>
+                </font>
+                </div> <br>
+                <div class="center mt-0.99">
+                  <a href=""  style="color: black;">SHOP NOW</a>
+                </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sidebox">
+          <a href=""><img src="../image/pic4.jpg" alt="" width="279px" height="188px"></a>
+          <div class="box3">
+            <div class="slide_content">
+              <div class="haddings">
+                <div class="headding_text">
+                 <font size="4" style="font-size: 21px;"><b>Marcel Dining <br>
+                  Room Chair</b></font>
+                </div>
+                
+                <div class="offer_text  mt-3">
+                  <font size="4">
+                    <span class="color">$129.00</span>
+                  </font>
+                  </div> <br>
+                  <div class="center mt-0.99">
+                    <a href=""  style="color: black;">SHOP NOW</a>
+                  </div>
+              </div>
+              
+  
+            </div>
+          </div>
+        </div>
+      
+        
+      </div>
+      <!-- //////////////////////////////// -->
+      
+                
+      <!-- /////////////////////////////////// -->
+      </div>
+      </div>
+    
+      </div> 
+  
+    </div>
+    <!-- .......................................................................................... -->
+   <ul class="mainbox">
+    <div class="smallbox2 back2">
+      <ul class="flex">
+        <div class="sweet">
+
+
+          <div class="box4" >
+            <ul>
+              <div class="box1">
+                  <li style="list-style: none;">
+                      <a href="" class="any"><img src="../image/pich1.jpg" alt="" width="137px" class="rex"></a>
+                  </li>
+                  <div class="xpart">
+                      <div class="xpart2 p-1">
+                          <a href="" class="dark text-decoration-none">Smart Tablet</a>
+                      </div>
+                  </div>
+               </div>
+             </ul>
+          </div>
+
+
+          <div class="box4">
+            <ul>
+                <div class="box1">
+                    <li style="list-style: none;">
+                        <a href="" class="any"><img src="../image/pich2.jpg" alt="" width="137px" class="rex"></a>
+                    </li>
+                    <div class="xpart">
+                        <div class="xpart2">
+                            <a href="" class="dark text-decoration-none">Crepe T-shirt</a>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+
+        <div class="box4">
+          <ul>
+              <div class="box1">
+                  <li style="list-style: none;">
+                      <a href="" class="any"><img src="../image/pich3.jpg" alt="" width="137px" class="rex"></a>
+                  </li>
+                  <div class="xpart">
+                      <div class="xpart2">
+                          <a href="" class="dark text-decoration-none">Leather Watche</a>
+                      </div>
+                  </div>
+              </div>
+          </ul>
+      </div>
+
+      <div class="box4">
+          <ul>
+              <div class="box1">
+                  <li style="list-style: none;">
+                      <a href="" class="any"><img src="../image/pich4.jpg" alt="" width="137px" class="rex"></a>
+                  </li>
+                  <div class="xpart">
+                      <div class="xpart2">
+                          <a href="" class="dark text-decoration-none">Rolling Diamond</a>
+                      </div>
+                  </div>
+              </div>
+          </ul>
+      </div>
+
+      <div class="box4">
+          <ul>
+              <div class="box1">
+                  <li style="list-style: none;">
+                      <a href="" class="any"><img src="../image/pich5.jpg" alt="" width="137px" class="rex"></a>
+                  </li>
+                  <div class="xpart">
+                      <div class="xpart2">
+                          <a href="" class="dark text-decoration-none">Wooden Chair</a>
+                      </div>
+                  </div>
+              </div>
+          </ul>
+      </div>
+
+      <div class="box4 other">
+          <ul>
+              <div class="box1">
+                  <li style="list-style: none;">
+                      <a href="" class="any"><img src="../image/pich6.jpg" alt="" width="137px" class="rex"></a>
+                  </li>
+                  <div class="xpart">
+                      <div class="xpart2">
+                          <a href="" class="dark text-decoration-none">Sneakers Shoes</a>
+                      </div>
+                  </div>
+              </div>
+          </ul>
+      </div>
+        </div>
+      </ul>
+    </div>
+   </ul>
+  <!-- ......................................................................................... -->
+ <br>
+
+  <div class="headersy">
+    <div class="sebox">
+      <div class="boxx">
+          <div class="3left">
+              <i class="fa-solid fa-truck-fast fa-flip-horizontal fa-2xl"></i><font size="6"><b>FREE SHIPPING</b></font>
+          </div>
+          <div class="3center">
+             <b> Free Delivery Now On Your First Order and over $200</b>
+          </div>
+          <div class="3right">
+              <font size="6"><b>-only $200*</b></font>
+          </div>
+         </div>
+    </div>
+    <!-- .................................................................................. -->
+   
+    <div class="seimg">
+      <div class="seingun">
+       
+        <a href=""><img src="../image/photobg.jpg" alt="" width="360px" height="185px"></a>
+        <div class="text">
+            <div class="text2">
+              <font size="5"><b>S22 Samsung <br>
+                       Smartphone
+                   </b>
+             </font>
+          </div>
+          <div class="offer_text  width  mt-3">
+            <font size="1">
+              <span class="color" style="color: red;">$250.00</span>
+            </font>
+            </div>   <br>
+          <div class="center mt-0.99">
+            <a href=""  style="color: black;">SHOP NOW</a>
+          </div>
+        </div>
+      </div>
+      <div class="seingun">
+      <a href=""> <img src="../image/photobg2.jpg" alt="" width="360px" height="185px"></a>
+      <div class="text">
+        <div class="text2">
+          <font size="5"><b>Armchair Mad <br>
+            By shopstic
+               </b>
+         </font>
+      </div>
+      <div class="offer_text  width  mt-3">
+        <font size="1">
+          <span class="color" style="color: red;">$190.00</span>
+        </font>
+        </div>   <br>
+      <div class="center mt-0.99">
+        <a href=""  style="color: black;">SHOP NOW</a>
+      </div>
+    </div>
+      </div>
+      <div class="seingun">
+      <a href=""> <img src="../image/phtobg3.jpg" alt="" width="360px" height="185px"></a>
+      <div class="text">
+        <div class="text2">
+          <font size="5"><b>Noise Wireless <br>
+            Headphones
+               </b>
+         </font>
+      </div>
+      <div class="offer_text    mt-3">
+        <font size="1">
+          <span class="color" style="color: red;">$129.00</span>
+        </font>
+        </div>   <br>
+      <div class="center mt-0.99">
+        <a href=""  style="color: black;">SHOP NOW</a>
+      </div>
+    </div>
+      </div>
+ </div>
+</div>
+<!-- ............................................................................................. -->
+     
+<div class="poplure">
+<div class="card-group m-5 ">
+  <div class="card">
+   <a href="" class="change"> <img src="../image/watchppr.jpg" class="card-img-top" alt="..."></a>
+    <a href="" class="change2"><img src="../image/watch2.jpg" class="card-img-top change2 change3" alt="..." ></a>
+    <div class="card-body">
+      <h5 class="card-title" style="color: #777777; font-size: 15px;">initech space</h5>
+      <p class="card-text" style="font-size: 18px;">Apple Smart Watch / Midnight Aliminum </p>
+      <div class="star star_on">
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color: #FFD43B; font-size: 12px;"></i>
+      </div> 
+      <div class="money mt-2"> 
+        <font size="4" style="color: red;">$51.04</font>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+   <a href=""> <img src="../image/begppr.jpg" class="card-img-top" alt="..."></a>
+   <a href="" class="change2"> <img src="../image/bag2.jpg" class="card-img-top change2 change3" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title" style="color: #777777; font-size: 15px;">Pro Tech Gear</h5>
+      <p class="card-text" style="font-size: 18px;">Cropped Stain Bomber Big Bag</p>
+      <div class="star star_on">
+        <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+      </div> 
+      <div class="money mt-2"> 
+        <font size="4" style="color: red;">$94.00</font>
+      </div>
+    </div>
+
+   
+  </div>
+  <div class="card">
+  <a href="">  <img src="../image/jkppr.jpg" class="card-img-top" alt="..."></a>
+  <a href="" class="change2">  <img src="../image/3rd.jpg" class="card-img-top change2 change3" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title" style="color: #777777; font-size: 15px;">Soylent Green</h5>
+      <p class="card-text" style="font-size: 18px;">Mens Cotton Casual Full Sleeve T-Shirts</p>
+      <div class="star star_on">
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+      </div> 
+      <div class="money mt-2"> 
+        <font size="4" style="color: red;">$86.00</font>
+      </div>
+    </div>
+   
+  </div>
+  <div class="card">
+    <a href=""><img src="../image/tshirt.jpg" class="card-img-top" alt=""></a>
+    <a href="" class="change2">    <img src="../image/tshirtppr.jpg" class="card-img-top change2 change3" alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title" style="color: #777777; font-size: 15px;">Gadget Zone</h5>
+      <p class="card-text" style="font-size: 18px;">multicolored Open-Knit Crewneck</p>
+      <div class="star star_on">
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+      </div> 
+      <div class="money mt-2"> 
+        <font size="4" style="color: red;">$79.00</font>
+      </div>
+    </div>
+    
+  </div>
+  <div class="card">
+    <a href=""><img src="../image/bag.jpg" class="card-img-top" alt="..."></a>
+    <a href="" class="change2"><img src="../image/ppppr.jpg" class="card-img-top change2 change3" style="margin: 35px;"  alt="..."></a>
+    <div class="card-body">
+      <h5 class="card-title" style="color: #777777; font-size: 15px;">Looney Tunes</h5>
+      <p class="card-text"  style="font-size: 18px;">Michels Kors Jet Set Tote Shooes</p>
+
+      <div class="star star_on">
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+      </div> 
+      <div class="money mt-2"> 
+        <font size="4" style="color: red;">$86.00</font>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<!-- .................................................................... -->
+
+<div class="banner">
+  <div class="banner2 p-4">
+    <a href=""><img src="../image/banner.jpg" alt="" width="1150px"></a>
+  </div>
+  <div class="banner_text">
+    <span>
+      <font size="7" style="color: aliceblue; font-size: 50px;"  >WATCH</font>
+    </span>
+  </div>
+  <div class="banner_text2">
+    <span>
+      <font style="color: aliceblue; font-weight:600;">M6 Smart Band 2.3 – Fitness Band</font>
+    </span> <br>
+    <span>
+      <font style="color: aliceblue; font-weight:600">Men’s and Women’s Health Tracking, Red Strap</font>
+    </span>
+  </div>
+</div>
+<!-- .................................................................................................. -->
+
+<div class="fontjack">
+
+  <font class="my-5 bold2" size="6">Latest Products</font>
+</div>
+  <div class="card-group m-5 "> 
+    <div class="card">
+     <a href="" class="change"> <img src="../image/bk1.jpg" class="card-img-top" alt="..."></a>
+      <a href="" class="change2"><img src="../image/bk11.jpg" class="card-img-top change2 change3" alt="..." ></a>
+      <div class="card-body">
+        <h5 class="card-title" style="color: #777777; font-size: 15px;">Soylent Green</h5>
+        <p class="card-text " style="font-size: 18px; color: black;">Plastic Bamboo Dustpan & Brush Black </p>
+        <div class="star star_on">
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+        </div> 
+        <div class="money mt-2"> 
+          <font size="4" style="color: red;">$52.44</font>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+     <a href=""> <img src="../image/watchppr.jpg" class="card-img-top" alt="..."></a>
+     <a href="" class="change2"> <img src="../image/ppppr.jpg" class="card-img-top change2 change3" alt="..."></a>
+      <div class="card-body">
+        <h5 class="card-title" style="color: #777777; font-size: 15px;">Pro Tech Gear</h5>
+        <p class="card-text" style="font-size: 18px;">Cropped Stain Bomber Big Bag</p>
+        <div class="star star_on">
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+        </div> 
+        <div class="money mt-2"> 
+          <font size="4" style="color: red;">$84.00</font>
+        </div>
+      </div>
+  
+     
+    </div>
+    <div class="card">
+    <a href="">  <img src="../image/bk2.jpg" class="card-img-top" alt="..."></a>
+    <a href="" class="change2">  <img src="../image/bk22.jpg" class="card-img-top change2 change3" alt="..."></a>
+      <div class="card-body">
+        <h5 class="card-title" style="color: #777777; font-size: 15px;">The Simpsons</h5>
+        <p class="card-text" style="font-size: 18px;">Smart Speaker & Google Assistant,Light Grey</p>
+        <div class="star star_on">
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+        </div> 
+        <div class="money mt-2"> 
+          <font size="4" style="color: red;">$54.00</font>
+        </div>
+      </div>
+     
+    </div>
+    <div class="card">
+      <a href=""><img src="../image/bk3.jpg" class="card-img-top" alt=""></a>
+      <a href="" class="change2">    <img src="../image/bk33.jpg" class="card-img-top change2 change3" alt="..."></a>
+      <div class="card-body">
+        <h5 class="card-title" style="color: #777777; font-size: 15px;">Pro Tech Gear</h5>
+        <p class="card-text" style="font-size: 18px;">GENELEC Compact Two-Way Active Speaker</p>
+        <div class="star star_on">
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: #FFD43B; font-size: 12px;"></i>
+        </div> 
+        <div class="money mt-2"> 
+          <font size="4" style="color: red;">$37.00</font>
+        </div>
+      </div>
+      
+    </div>
+    <div class="card">
+      <a href=""><img src="../image/bk4.jpg" class="card-img-top" alt="..."></a>
+      <a href="" class="change2"><img src="../image/bk44.jpg" class="card-img-top change2 change3" style="margin: 35px;"  alt="..."></a>
+      <div class="card-body">
+        <h5 class="card-title" style="color: #777777; font-size: 15px;">Massive Dynamic</h5>
+        <p class="card-text"  style="font-size: 18px;">Natural Wood Ceiling Pendant Light Shade</p>
+  
+        <div class="star star_on">
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+          <i class="fa-solid fa-star" style="color: silver; font-size: 12px;"></i>
+        </div> 
+        <div class="money mt-2"> 
+          <font size="4" style="color: red;">$55.00</font>
+        </div>
+      </div>
+      
+    </div>
+</div>
+<!-- .......................................................................................... -->
+
+<div class="round">
+  <div class="round2">
+    <div class="round3" style="display: flex; justify-content: center;">
+      <a href="" class="product"><img src="../image/sofa.jpg" alt="" width="555px"></a>
+      <a href="" class="Product2"><img src="../image/plady.jpg" alt="" width="555px"></a>
+    </div>
+          <div class="round 4 nproduct">
+              <font size="3">Save Up To 20% Off</font> <br>
+              <font size="6">Santa Lucia Three <br>
+                            Seater Sofa</font> <br><br>
+                  <div class="botton-shopnow div4">
+                       <a href="" class="btn btn-danger"> Shop now</a>
+                  </div>
+          </div>
+
+          <div class="round 4 nproduct2">
+            <font size="3">Best Online Discount</font> <br>
+            <font size="6">Woman In Red Crew <br>
+                            Neck T-shirt</font> <br><br>
+                <div class="botton-shopnow div4">
+                     <a href="" class="btn btn-danger"> Shop now</a>
+                </div>
+        </div>
+  </div>
+</div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>

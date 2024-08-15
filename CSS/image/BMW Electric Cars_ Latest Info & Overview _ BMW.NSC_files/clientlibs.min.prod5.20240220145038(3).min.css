@@ -1,0 +1,46 @@
+.ds2-micro-story{margin-bottom:60px}
+@media only screen and (min-width:981px){.ds2-micro-story{margin-bottom:73.5px}
+}
+.ds2-micro-story .ds2-expand--float{float:none;display:block;margin-bottom:1rem;overflow:auto}
+.ds2-micro-story .ds2-expand--float .ds2-micro-story--image{margin-bottom:0;width:100%}
+.ds2-micro-story .ds2-expand--float .ds2-micro-story--video{margin-bottom:0;width:100%}
+.ds2-micro-story .ds2-expand--float .ds2-micro-story--video img{float:none}
+@media only screen and (min-width:981px){.ds2-micro-story .ds2-expand--float{margin-bottom:30px}
+}
+.ds2-micro-story .ds2-expand--float .ds2-micro-story--link{display:inline-block}
+.ds2-micro-story .ds2-expand--copy-title{display:inline-block;margin-top:0;line-height:35px}
+.ds2-micro-story .ds2-expand--copy-content{margin-bottom:1rem}
+.ds2-micro-story .ds2-expand--copy-content:last-child{margin-bottom:30px}
+.ds2-micro-story .ds2-micro-story--title{margin-top:0}
+@media only screen and (min-width:521px){.ds2-micro-story .ds2-micro-story--title{margin-bottom:2rem;margin-top:0;line-height:1.2;float:right;width:49%}
+}
+@media only screen and (min-width:521px){.ds2-micro-story .float-right .ds2-micro-story--title{float:left}
+}
+.ds2-micro-story--media-container{margin-bottom:15px}
+@media only screen and (min-width:521px){.ds2-micro-story--media-container{float:left;width:50%}
+}
+@media only screen and (min-width:521px) and (max-width:980px){.ds2-micro-story--media-container .ds2-micro-story--image{padding-right:7.5px}
+.ds2-micro-story--media-container .ds2-micro-story--video{padding-right:7.5px}
+.ds2-micro-story--media-container .ds2-micro-story--video img{float:none}
+}
+@media only screen and (min-width:981px){.ds2-micro-story--media-container .ds2-micro-story--image{padding-right:15px}
+.ds2-micro-story--media-container .ds2-micro-story--video{padding-right:15px}
+.ds2-micro-story--media-container .ds2-micro-story--video img{float:none}
+}
+@media only screen and (min-width:521px){.ds2-micro-story--textbox{float:right;width:49%}
+}
+.ds2-micro-story--textbox .ds2-expand--body-copy-container{margin-top:3px}
+@media only screen and (min-width:521px){.float-right .ds2-micro-story--textbox{float:left}
+}
+@media only screen and (min-width:521px){.float-right .ds2-micro-story--media-container{float:right;margin-right:0}
+.float-right .ds2-micro-story--media-container .ds2-micro-story--image{padding-right:0}
+.float-right .ds2-micro-story--media-container .ds2-micro-story--video img{float:none}
+}
+@media only screen and (min-width:521px) and (max-width:980px){.float-right .ds2-micro-story--media-container .ds2-micro-story--image{padding-left:7.5px}
+.float-right .ds2-micro-story--media-container .ds2-micro-story--video{padding-left:7.5px}
+.float-right .ds2-micro-story--media-container .ds2-micro-story--video img{float:none}
+}
+@media only screen and (min-width:981px){.float-right .ds2-micro-story--media-container .ds2-micro-story--image{padding-left:15px}
+.float-right .ds2-micro-story--media-container .ds2-micro-story--video img{float:none}
+}
+.ds2-branded-bmwm .ds2-micro-story--title{margin-bottom:10px}

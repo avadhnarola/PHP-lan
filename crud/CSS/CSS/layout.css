@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+.main {
+    background-color: lightblue;
+    display: flex;
+    width: 100%;
+    height: 44px;
+    align-items: center;
+    /* color: #aaaaaa; */
+    justify-content: space-between;
+    animation-name: example2;
+    animation-duration: 8s;
+    animation-play-state: running;
+    /* animation-fill-mode: backwards; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    /* padding: 9px;
+    padding-right: 20px; */
+}
+.daily
+{
+    padding: 10px;
+    margin-left: 20px;
+}
+
+
+li {
+    list-style: none;
+}
+
+.main2 {
+    /* background-color: black; */
+    display: flex;
+    width: 100%;
+    /* height: 44px; */
+    align-items: center;
+    /* color: #aaaaaa; */
+    justify-content: space-between;
+    color: white;
+}
+
+.left2 {
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+.left2:hover {
+    transform: scale(1.1);
+}
+
+.left {
+    margin: 200px;
+    padding-left: 20px;
+}
+
+.main2 p:hover {
+    text-shadow: 2px 2px 4px red;
+
+}
+
+.rmenu a:hover {
+    color: red;
+}
+
+.main3 {
+    /* background-color: black; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+    /* display: grid; */
+}
+
+.main3 p:hover {
+    text-shadow: 2px 2px 4px aqua;
+}
+.left3
+{
+    padding-left: 20px;
+}
+.menu {
+
+    animation-name: example;
+    animation-duration: 8s;
+    animation-play-state: running;
+    /* animation-fill-mode: backwards; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 5;
+}
+
+@keyframes example {
+    from {
+        transform: translate(0%);
+    }
+
+    to {
+        transform: rotatex(200deg) translate(300%);
+        /* transform: rotate(1.5turn) translate(-300%);; */
+    }
+}
+
+@keyframes example2 {
+    0%   {background-color: aliceblue;}
+    25%  {background-color: lightblue;}
+    50%  {background-color: lightgray;}
+    100% {background-color: lightskyblue;}
+}
+.main4 {
+    /* background-color: black; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+    /* display: grid; */
+    justify-content: left;
+}
+.right4
+{
+    padding-left: 40px;
+}
+.left4
+{
+    padding-left: 20px;
+}
+ .main4 p:hover
+ {
+    color:  bisque;
+    text-shadow: 2px 0px 10px white;
+    transform: scale(1.2);
+ }
+ .main5 {
+    /* background-color: black; */
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+    justify-content: left;
+    display: flex;
+}
+.left5
+{
+    padding-left: 20px;
+}
+
+
