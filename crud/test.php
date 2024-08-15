@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
 
     if (isset($_GET['u_id'])) {
 
-        mysqli_query($conn,"update admin set name='$name' , email='$email' , password='$password' , gender='$gender' , hobby='$hobby' , city='$city' where id=$id");
+        mysqli_query($conn, "update admin set name='$name' , email='$email' , password='$password' , gender='$gender' , hobby='$hobby' , city='$city' where id=$id");
     } else {
         mysqli_query($conn, "insert into admin(name,email,password,gender,hobby,city) VALUES ('$name','$email','$password','$gender','$hobby','$city')");
     }
@@ -51,10 +51,10 @@ if (isset($_POST['submit'])) {
         <tr>
             <td>Gender : </td>
             <td>
-                <input type="radio" name="gender" value="Male" <?php if(@$u_data['gender'] == "Male"){
+                <input type="radio" name="gender" value="Male" <?php if (@$u_data['gender'] == "Male") {
                     echo "checked";
                 } ?>>Male
-                <input type="radio" name="gender" value="Female" <?php if(@$u_data['gender'] == "Female"){
+                <input type="radio" name="gender" value="Female" <?php if (@$u_data['gender'] == "Female") {
                     echo "checked";
                 } ?>>Female
             </td>
@@ -62,23 +62,23 @@ if (isset($_POST['submit'])) {
         <tr>
             <td>Hobbies : </td>
             <td>
-                <input type="checkbox" name="hobby[]" value="Cricket" <?php if(isset($_GET['u_id'])){
-                    if(in_array("Cricket",@$arr_hobby)){
+                <input type="checkbox" name="hobby[]" value="Cricket" <?php if (isset($_GET['u_id'])) {
+                    if (in_array("Cricket", @$arr_hobby)) {
                         echo "Checked";
                     }
-                } ?> >Cricket
-                <input type="checkbox" name="hobby[]" value="Hockey" <?php if(isset($_GET['u_id'])){
-                    if(in_array("Hockey",@$arr_hobby)){
+                } ?>>Cricket
+                <input type="checkbox" name="hobby[]" value="Hockey" <?php if (isset($_GET['u_id'])) {
+                    if (in_array("Hockey", @$arr_hobby)) {
                         echo "Checked";
                     }
                 } ?>>Hokey
-                <input type="checkbox" name="hobby[]" value="Singing" <?php if(isset($_GET['u_id'])){
-                    if(in_array("Singing",@$arr_hobby)){
+                <input type="checkbox" name="hobby[]" value="Singing" <?php if (isset($_GET['u_id'])) {
+                    if (in_array("Singing", @$arr_hobby)) {
                         echo "checked";
                     }
                 } ?>>Singing
-                <input type="checkbox" name="hobby[]" value="Reading" <?php if(isset($_GET['u_id'])){
-                    if(in_array("Reading",@$arr_hobby)){
+                <input type="checkbox" name="hobby[]" value="Reading" <?php if (isset($_GET['u_id'])) {
+                    if (in_array("Reading", @$arr_hobby)) {
                         echo "checked";
                     }
                 } ?>>Reading
@@ -89,11 +89,24 @@ if (isset($_POST['submit'])) {
             <td>
                 <select name="city" id="">
                     <option value="" disabled selected>-- select city --</option>
-                    <option value="Surat">Surat</option>
-                    <option value="Navasari">Navasari</option>
-                    <option value="Botad">Botad</option>
-                    <option value="Vadodara">Vadodara</option>
-                    <option value="Rajkot">Rajkot</option>
+                    <option value="Surat" <?php if (@$u_data['city'] == "Surat") {
+                        echo "Selected";
+                    } ?>></option>>Surat
+                    </option>
+                    <option value="Navasari" <?php if (@$u_data['city'] == "Navasari") {
+                        echo "Selected";
+                    } ?>>Navasari
+                    </option>
+                    <option value="Botad" <?php if (@$u_data['city'] == "Botad") {
+                        echo "Selected";
+                    } ?>>Botad</option>
+                    <option value="Vadodara" <?php if (@$u_data['city'] == "Vadodara") {
+                        echo "Selected";
+                    } ?>>Vadodara
+                    </option>
+                    <option value="Rajkot" <?php if (@$u_data['city'] == "Rajkot") {
+                        echo "Selected";
+                    } ?>>Rajkot</option>
                 </select>
             </td>
         </tr>
