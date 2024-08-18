@@ -1,0 +1,79 @@
+.ds2-table-element{margin-bottom:27px}
+.ds2-table-element td .ds2-table-element--cell-item:last-child{padding-bottom:0}
+.ds2-table-element td .ds2-table-element--cell-item.ds2-link-element .ds2-link.ds2-icon{display:inline;color:#262626}
+.ds2-table-element td .ds2-table-element--cell-item.ds2-link-element .ds2-link.ds2-icon:hover{color:#1366d7}
+.ds2-table-element td .ds2-table-element--cell-item.ds2-link-element:not(:first-child){margin-top:1rem}
+.ds2-table-element td .ds2-table-element--cell-item.ds2-link-element:not(:last-child){margin-bottom:1rem}
+.ds2-table-element .stacktable.large-only{display:none}
+@media only screen and (min-width:521px){.ds2-table-element .stacktable.large-only{display:table}
+}
+.ds2-table-element .stacktable.small-only{display:table}
+@media only screen and (min-width:521px){.ds2-table-element .stacktable.small-only{display:none}
+}
+@media only screen and (min-width:521px){.ds2-table-element th{font-size:24px}
+}
+.ds2-table-element td,.ds2-table-element th{font-weight:700;text-align:right;padding-left:14px !important;padding-right:0}
+.ds2-table-element td[data-hasonlyimage=true],.ds2-table-element th[data-hasonlyimage=true]{padding-right:0}
+.ds2-table-element td:first-child,.ds2-table-element th:first-child{text-align:left;padding-left:0;padding-right:15px;font-weight:400}
+.ds2-table-element td.st-head-row,.ds2-table-element th.st-head-row{font-weight:700}
+.ds2-table-element td.st-head-row-main,.ds2-table-element th.st-head-row-main{font-weight:400}
+.ds2-table-element td.st-key,.ds2-table-element th.st-key{text-align:left;font-weight:400;padding-right:7.5px}
+.ds2-table-element td.st-key .ds2-table-element--has-align-right .ds2-table-element--cell-item,.ds2-table-element th.st-key .ds2-table-element--has-align-right .ds2-table-element--cell-item{text-align:inherit}
+.ds2-table-element td.st-val,.ds2-table-element th.st-val{padding-left:7.5px}
+.ds2-table-element td img,.ds2-table-element th img{margin:4px 0 5px}
+.ds2-table-element .st-head-row,.ds2-table-element td{padding:27px}
+.ds2-table-element .ds2-link-intablewithmorethanonelinefix .ds2-table-element--cell-item.ds2-link-element,.ds2-table-element .ds2-link-intablewithmorethanonelinefix .ds2-table-element--cell-item[data-link=true],.ds2-table-element td>div:not(.ds2-table-element--has-align-left) .ds2-table-element--cell-item.ds2-link-element,.ds2-table-element td>div:not(.ds2-table-element--has-align-left) .ds2-table-element--cell-item[data-link=true]{padding-left:16px}
+.ds2-table-element .ds2-link-intablewithmorethanonelinefix .ds2-table-element--cell-item[data-link=true][data-iconbg=true],.ds2-table-element td>div:not(.ds2-table-element--has-align-left) .ds2-table-element--cell-item[data-link=true][data-iconbg=true]{padding-left:28px}
+.ds2-table-element .ds2-link-intablewithmorethanonelinefix .ds2-link.ds2-icon,.ds2-table-element td>div:not(.ds2-table-element--has-align-left) .ds2-link.ds2-icon{width:100%;max-width:100%;right:0;padding-left:0}
+.ds2-table-element .ds2-link-intablewithmorethanonelinefix .ds2-link.ds2-icon::after,.ds2-table-element .ds2-link-intablewithmorethanonelinefix .ds2-link.ds2-icon::before,.ds2-table-element td>div:not(.ds2-table-element--has-align-left) .ds2-link.ds2-icon::after,.ds2-table-element td>div:not(.ds2-table-element--has-align-left) .ds2-link.ds2-icon::before{margin-left:-16px}
+.ds2-table-element .ds2-link-intablewithmorethanonelinefix .ds2-link.ds2-icon[data-iconbg=true]::before,.ds2-table-element td>div:not(.ds2-table-element--has-align-left) .ds2-link.ds2-icon[data-iconbg=true]::before{margin-left:-28px}
+@media only screen and (max-width:520px){.ds2-table-element td .ds2-table-element--has-align-left .ds2-table-element--cell-item[data-link=true]{padding-left:16px}
+.ds2-table-element td .ds2-table-element--has-align-left .ds2-table-element--cell-item[data-link=true][data-iconbg=true]{padding-left:28px}
+.ds2-table-element td .ds2-table-element--has-align-left .ds2-link.ds2-icon{display:inline;width:100%;max-width:100%;right:0;padding-left:0}
+.ds2-table-element td .ds2-table-element--has-align-left .ds2-link.ds2-icon::before{margin-left:-16px}
+.ds2-table-element td .ds2-table-element--has-align-left .ds2-link.ds2-icon[data-iconbg=true]::before{margin-left:-28px}
+}
+@media only screen and (min-width:521px){.ds2-table-element td .ds2-table-element--has-align-left .ds2-link.ds2-icon{display:inline-block}
+}
+.ds2-table-element--head-row{border-bottom:1px solid #e6e6e6}
+.ds2-table-element--head-row td,.ds2-table-element--head-row th{font-weight:400}
+.stacktable .ds2-table-element--head-row{border-bottom:0}
+.ds2-table-element--head-row .st-head-row,.ds2-table-element--head-row th{padding-top:1rem;padding-bottom:15px;padding-left:15px;padding-right:0}
+.ds2-table-element--head-row .st-head-row:first-child,.ds2-table-element--head-row th:first-child{padding-left:0}
+@media only screen and (max-width:520px){.ds2-table-element--head-row .st-head-row:first-child,.ds2-table-element--head-row th:first-child{padding-top:15px;padding-bottom:0}
+}
+@media only screen and (max-width:520px){.ds2-table-element--head-row .st-head-row:nth-child(2),.ds2-table-element--head-row th:nth-child(2){padding:0;vertical-align:bottom}
+}
+.st-head-row:first-child{padding-right:15px;padding-top:30px}
+@media only screen and (min-width:981px){.ds2-table--has-padding td,.ds2-table--has-padding th,.ds2-table-element--has-padding td,.ds2-table-element--has-padding th{padding-right:15px}
+}
+.ds2-table-element td .ds2-cms-output,.ds2-table-element th .ds2-cms-output{font-size:inherit;font-weight:inherit;line-height:inherit;margin:0;padding:0}
+.ds2-table-element td .ds2-cms-output li,.ds2-table-element td .ds2-cms-output ul,.ds2-table-element th .ds2-cms-output li,.ds2-table-element th .ds2-cms-output ul{margin:0}
+.ds2-cms-output table,.ds2-cms-output tbody,.ds2-cms-output td,.ds2-cms-output tfoot,.ds2-cms-output th,.ds2-cms-output thead,.ds2-cms-output tr{border:0;border-spacing:0;border-color:inherit}
+.ds2-cms-output table{margin-bottom:15px}
+.ds2-cms-output tbody tr:not(:first-child){border-bottom:1px solid #e6e6e6}
+.ds2-cms-output td,.ds2-cms-output th{font-weight:700;text-align:right;padding-left:15px}
+.ds2-cms-output td:first-child,.ds2-cms-output th:first-child{text-align:left;padding-left:0;font-weight:400}
+.ds2-cms-output td li,.ds2-cms-output td ul,.ds2-cms-output th li,.ds2-cms-output th ul{margin:0;line-height:inherit}
+.ds2-cms-output th{padding-top:1rem;padding-bottom:1rem;font-weight:400}
+.ds2-table{margin-bottom:4rem}
+@media only screen and (min-width:981px){.ds2-table{margin-bottom:5rem}
+}
+.ds2-table table{margin-bottom:1rem}
+.ds2-table .ds2-table--subheadline{margin-bottom:1.25rem}
+.ds2-table .ds2-disclaimer--list{margin-bottom:1rem;margin-top:2rem}
+.ds2-table-element .large-only td .ds2-cms-output.ds2-table-element--has-align-left,.ds2-table-element .large-only th .ds2-cms-output.ds2-table-element--has-align-left{text-align:left}
+.ds2-table-element .large-only td .ds2-cms-output.ds2-table-element--has-align-right,.ds2-table-element .large-only th .ds2-cms-output.ds2-table-element--has-align-right{text-align:right}
+.ds2-table-element .large-only td .ds2-cms-output.ds2-table-element--has-weight-normal,.ds2-table-element .large-only th .ds2-cms-output.ds2-table-element--has-weight-normal{font-weight:400}
+.ds2-table-element .large-only td .ds2-cms-output.ds2-table-element--has-weight-bold,.ds2-table-element .large-only th .ds2-cms-output.ds2-table-element--has-weight-bold{font-weight:700}
+.ds2-table-element--has-align-left .ds2-table-element--cell-item{text-align:left}
+.ds2-table-element--has-align-right .ds2-table-element--cell-item{text-align:right}
+.ds2-table-element--has-weight-normal .ds2-table-element--cell-item{font-weight:400}
+.ds2-table-element--has-weight-bold .ds2-table-element--cell-item{font-weight:700}
+td.ds2-table-element--has-align-bottom{vertical-align:bottom}
+.ds2-table--keyvisual{margin-bottom:15px}
+@media only screen and (min-width:521px){.ds2-table--keyvisual{margin-bottom:30px}
+}
+.ds2-table--headline .ds2-footnote{vertical-align:bottom;top:-1.2rem;font-size:11px}
+@media only screen and (min-width:521px){.ds2-table--headline .ds2-footnote{top:-1.6rem}
+}

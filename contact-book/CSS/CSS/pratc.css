@@ -1,0 +1,26 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+a
+{
+    list-style: none;
+    text-decoration: none;
+}
+li
+{
+    list-style: none;
+}
+.container
+{
+    border: 3px solid black;
+    background: lightblue;
+    
+}
+.box
+{
+    border: 1px solid red;
+    padding: 10px;
+
+}

@@ -1,0 +1,358 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+a {
+    text-decoration: none;
+    color: #aaaaaa;
+    padding: 25px;
+}
+/* .right a:hover
+{
+    color: red;
+} */
+.right a
+{
+    color: #aaaaaa;
+}
+.margin
+{
+    padding-left: 200px;
+}
+.color
+{
+    color: black;
+}
+.color:hover
+{
+    color: black;
+}
+.flex
+{
+    display: flex;
+}
+/* .right:hover
+{
+    color: red;
+} */
+.bold li a
+{
+    color: black;
+}
+.back
+{
+    font: 200;
+}
+.slider
+{
+    position: relative;
+}
+.box
+{
+    position: absolute;
+    top: 20%;
+    left: 55%;
+}
+.color
+{
+    color: red;
+    font-size: 25px;
+}
+@keyframes box
+{
+    from {
+        transform: translate(0%);
+    }
+    to {
+        transform: translate(260px);
+        /* transform: rotate(1.5turn) translate(-300%);; */
+    }
+}
+
+.box
+{
+    animation-name: box;
+    animation-duration: 1s;
+    animation-direction: reverse;
+}
+.container
+{
+    height: 400px;
+    /* border: 2px solid red; */
+    position: relative;
+}
+.main2
+{
+    position: absolute;
+    top: -5%;
+    left: 870px;                                             /*870*/
+    /* display: flex;
+    flex-direction: column; */
+    margin-left: -32px
+
+}
+.sidebox
+{
+    margin: 30px;
+}
+.carousel-inner
+{
+    width: 140%;
+}
+.width
+{
+    width: 140%;
+}
+.body
+{
+    background-color: #f5f5f5f7;
+    height: 500px;
+}
+.pic1
+{
+    position: relative;
+}
+.box2
+{
+    position: absolute;
+    top: 10%;
+    left: 80px;
+}
+.text2
+{
+    font-weight: 400;
+    font-size: 10px;
+}
+.center
+{
+    margin: -20px;
+}
+.pic2
+{
+    position: absolute;
+    top: 1%;
+    display: flex;
+    justify-content: center;
+}
+.box3
+{
+    position: absolute;
+    top: 58%;
+    left: 185px;
+}
+.box4
+{
+    margin: -10px;
+}
+
+.smallbox {
+    display: flex;
+    float: left;
+    justify-content: center;
+    padding: 10px;
+    /* background: #000; */
+}
+
+.flex {
+    display: flex;
+    padding: 40px;
+    margin: -20px;
+    /* justify-content: center; */
+    /* transform: scale(1.2); */
+}
+
+.any {
+    padding: 15px;
+    display: flex;
+    margin-right: 35px;
+    align-content: center;
+    justify-content: center;
+}
+.box4 {
+    width: 181px;
+    background: white;
+    height: 210px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    animation-name: example2;
+    animation-delay: 5s;
+    margin: 8px;
+}
+
+.box4:hover .rex {
+    transform: scale(1.2);
+}
+
+.xpart2 {
+    display: flex;
+    justify-content: center;
+    margin: -20px;
+    /* z-index: -3; */
+    color: #333333;
+    font-weight: 600;
+}
+.dark {
+    color: #333333;
+    margin-left: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.dark:hover {
+    color: red;
+    /* text-shadow: 1px 1px 1px black; */
+}
+.back2
+{
+    background-color:  #f5f5f5f7;
+    margin: -30px;
+    margin-right: 0px;
+    display: flex;
+}
+.smallbox
+{
+    display: flex;
+    flex-direction: row;
+}
+.sweet
+{
+    display: flex;
+}
+.sebox
+{
+    border: 2px solid red;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.seimg
+{
+    display: flex;
+    /* margin: 10px; */
+    padding: 20px;
+}
+.boxx
+{
+    display: flex;
+    margin: 10px;
+    /* padding: 20px; */
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+.sebox
+{
+    border: 2px solid red;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.seimg
+{
+    display: flex;
+    /* margin: 10px; */
+    padding: 20px;
+}
+.seingun
+{
+    padding: -12px;
+    border-radius: 10px;
+    position: relative;
+}
+.text
+{
+    position: absolute;
+    top: 16%;
+    left: 52%;
+}
+.center a:hover
+{
+    text-decoration: none;
+}
+.width
+{
+    font-weight: 500;
+    font-size: 10px;
+}
+.width a:hover
+{
+    color: red;
+}
+.card 
+{
+    position: relative;
+}
+.change2
+{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+    width: 172px;
+    height: 175px;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.card:hover .change2
+{
+    display: block;
+}
+.change3
+{
+    margin: 26px;
+}
+.other
+{
+    margin-right: -30px;
+}
+.bannner2
+{
+    position: relative;
+}
+.banner_text
+{
+    position: absolute;
+    top: 309.5%;
+    left: 25%;
+    font-weight: 500;
+
+}
+.banner_text2
+{
+    position: absolute;
+    top: 312%;
+    left: 40%;
+}
+.bold2
+{
+    margin-top: 100px;
+    margin: 50px;
+}
+
+.fontjack
+{
+    margin-bottom: -40px;
+}
+.abcd:hover
+{
+    color: red;
+}
+.round3
+{
+    position: relative;
+}
+.nproduct
+{
+    position: absolute;
+    top: 425%;
+    left: 6%;
+}
+.nproduct2
+{
+    position: absolute;
+    top: 425%;
+    left: 53%;
+}
+

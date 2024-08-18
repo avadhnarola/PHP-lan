@@ -1,5 +1,5 @@
 <?php
-include ('config.php');
+include('config.php');
 session_start();
 if (isset($_POST['submit'])) {
     $email = $_POST['email'];
@@ -164,5 +164,8 @@ if (isset($_POST['submit'])) {
             <input type="email" class="input" placeholder="Email" name="email">
             <input type="password" class="input" placeholder="Password" name="password">
             <input type="submit" class="form-btn" name="submit" value="Create Account">
+        </form>
+    </div>
+</body>
 
 </html>
