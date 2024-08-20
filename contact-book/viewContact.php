@@ -7,17 +7,19 @@ if (!isset($_SESSION['id'])) {
     header('location:login.php');
 }
 
-$cur_user = $_SESSION['email'];
+$cur_user = $_SESSION['id'];
+$user_email = $_SESSION['email'];
 echo $cur_user;
 
 
 if (isset($_GET['d_id'])) {
-    
+
     $id = $_GET['d_id'];
     mysqli_query($conn, "delete from contact where id=$id");
     header('viewContact.php');
 }
-$res = mysqli_query($conn, 'select id,name,contact_no FROM contact');
+
+$res = mysqli_query($conn, "select id,name,contact_no FROM contact where user_id='$cur_user'");
 
 ?>
 
@@ -63,8 +65,9 @@ $res = mysqli_query($conn, 'select id,name,contact_no FROM contact');
                     <td>
                         <?php echo $row['contact_no'] ?>
                     </td>
-                    <td><a href="contact.php"><i class="fa-regular fa-pen-to-square"></i></a></td>
-                    <td><a href="viewContact.php?d_id=<?php echo $row['id'] ?>"><i class="fa-regular fa-trash-can"></i></a>
+                    <td><a href="contact.php?u_id=<?php echo $row['id']; ?>"><i class="fa-regular fa-pen-to-square"></i></a>
+                    </td>
+                    <td><a href="viewContact.php?d_id=<?php echo $row['id']; ?>"><i class="fa-regular fa-trash-can"></i></a>
                     </td>
 
                 </tr>

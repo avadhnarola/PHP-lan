@@ -7,20 +7,37 @@ if (!isset($_SESSION['id'])) {
     header('location:login.php');
 }
 
+if (isset($_GET['u_id'])) {
+    
+    $id = $_GET['u_id'];
+
+    $u_data = mysqli_query($conn, "select * from contact where id=$id");
+    $u_data = mysqli_fetch_assoc($u_data);
+
+    // print_r($u_data);die();
+}
 
 if (isset($_POST['submit'])) {
 
     $con_no = $_POST['con_no'];
-    $checkdata = mysqli_query($conn,"select * from contact where contact_no='$con_no'");
+    $checkdata = mysqli_query($conn, "select * from contact where contact_no='$con_no'");
+    $cur_user = $_SESSION['id'];
 
-    if(mysqli_num_rows($checkdata)== 0){
+    if (mysqli_num_rows($checkdata) == 0) {
 
         $name = $_POST['name'];
         $con_no = $_POST['con_no'];
 
-        mysqli_query($conn, "insert into contact(name,contact_no) values('$name','$con_no');");
-    }
-    else{
+        if (isset($_GET['u_id'])) {
+
+            mysqli_query($conn, "update contact set name='$name',contact_no='$con_no' where id=$id");
+        }
+        else{
+            
+            mysqli_query($conn, "insert into contact(name,contact_no,user_id) values('$name','$con_no','$cur_user');");
+        }
+
+    } else {
         echo 'Already exist this contact number';
     }
 }
@@ -53,8 +70,10 @@ if (isset($_POST['submit'])) {
         <div class="form-container m-auto">
             <p class="title">Add Contact</p>
             <form class="form" method="post">
-                <input type="text" class="input" placeholder="Name" name="name" required>
-                <input type="number" class="input" placeholder="Contact No." name="con_no" required>
+                <input type="text" class="input" placeholder="Name" name="name" required
+                    value="<?php echo @$u_data['name']; ?>">
+                <input type="number" class="input" placeholder="Contact No." name="con_no" required
+                    value="<?php echo @$u_data['contact_no']; ?>">
 
                 <button class="form-btn" type="submit" name="submit">Save</button>
             </form>
