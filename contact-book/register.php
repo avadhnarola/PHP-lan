@@ -10,6 +10,8 @@ if (isset($_POST['submit'])) {
     $contact_no = $_POST['con_no'];
     $save = implode(',', $_POST['save']);
     mysqli_query($conn, "insert into register(name,email,password,gender,contact,saved) values('$name','$email','$password','$gender','$contact_no','$save');");
+
+    header('location:login.php');
 }
 
 ?>
@@ -41,9 +43,9 @@ if (isset($_POST['submit'])) {
         <div class="form-container m-auto">
             <p class="title">Register Account</p>
             <form class="form" method="post">
-                <input type="text" class="input" placeholder="Name" name="name">
-                <input type="email" class="input" placeholder="Email" name="email">
-                <input type="password" class="input" placeholder="Password" name="password">
+                <input type="text" class="input" placeholder="Name" name="name" required>
+                <input type="email" class="input" placeholder="Email" name="email" required>
+                <input type="password" class="input" placeholder="Password" name="password" required>
 
                 <table>
                     <tr>

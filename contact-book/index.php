@@ -1,6 +1,13 @@
 <?php 
   include_once 'db.php';
+
+  session_start();
+  if(!isset($_SESSION['id'])){
+    header('location:login.php');
+  }
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +27,7 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="body">
 
   <div class="container-fluid"  style="background-color: #007bff;">
     <nav class="navbar navbar-expand-lg">

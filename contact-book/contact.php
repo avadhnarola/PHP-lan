@@ -3,9 +3,26 @@ include_once 'db.php';
 
 include_once 'index.php';
 
-session_start();
-if(!isset($_SESSION['id'])){
+if (!isset($_SESSION['id'])) {
     header('location:login.php');
+}
+
+
+if (isset($_POST['submit'])) {
+
+    $con_no = $_POST['con_no'];
+    $checkdata = mysqli_query($conn,"select * from contact where contact_no='$con_no'");
+
+    if(mysqli_num_rows($checkdata)== 0){
+
+        $name = $_POST['name'];
+        $con_no = $_POST['con_no'];
+
+        mysqli_query($conn, "insert into contact(name,contact_no) values('$name','$con_no');");
+    }
+    else{
+        echo 'Already exist this contact number';
+    }
 }
 ?>
 
@@ -35,11 +52,11 @@ if(!isset($_SESSION['id'])){
     <div class="mt-5">
         <div class="form-container m-auto">
             <p class="title">Add Contact</p>
-            <form class="form">
-                <input type="text" class="input" placeholder="Name">
-                <input type="number" class="input" placeholder="Contact No.">
-                
-                <button class="form-btn" type="submit" name="submit">Add </button>
+            <form class="form" method="post">
+                <input type="text" class="input" placeholder="Name" name="name" required>
+                <input type="number" class="input" placeholder="Contact No." name="con_no" required>
+
+                <button class="form-btn" type="submit" name="submit">Save</button>
             </form>
 
         </div>

@@ -1,4 +1,9 @@
-/* From Uiverse.io by kennyotsu-monochromia */ 
+.body{
+  height: 1000px;
+  background: #f2f2f2;
+  overflow: hidden;
+}
+
 .Btn {
     --black: #000000;
     --ch-black: #141414;
