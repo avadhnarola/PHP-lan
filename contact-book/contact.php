@@ -20,8 +20,8 @@ if (isset($_GET['u_id'])) {
 if (isset($_POST['submit'])) {
 
     $con_no = $_POST['con_no'];
-    $checkdata = mysqli_query($conn, "select * from contact where contact_no='$con_no'");
     $cur_user = $_SESSION['id'];
+    $checkdata = mysqli_query($conn, "select * from contact where contact_no='$con_no' and user_id='$cur_user'");
 
     if (mysqli_num_rows($checkdata) == 0) {
 
@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
             <form class="form" method="post">
                 <input type="text" class="input" placeholder="Name" name="name" required
                     value="<?php echo @$u_data['name']; ?>">
-                <input type="number" class="input" placeholder="Contact No." name="con_no" required
+                <input type="number" class="input" placeholder="Contact No." maxlength="10" minlength="10" name="con_no" required
                     value="<?php echo @$u_data['contact_no']; ?>">
 
                 <button class="form-btn" type="submit" name="submit">Save</button>

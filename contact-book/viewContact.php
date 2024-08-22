@@ -9,7 +9,6 @@ if (!isset($_SESSION['id'])) {
 
 $cur_user = $_SESSION['id'];
 $user_email = $_SESSION['email'];
-echo $cur_user;
 
 
 if (isset($_GET['d_id'])) {
@@ -19,7 +18,26 @@ if (isset($_GET['d_id'])) {
     header('viewContact.php');
 }
 
-$res = mysqli_query($conn, "select id,name,contact_no FROM contact where user_id='$cur_user'");
+
+
+$limit = 6;
+$total_data = mysqli_query($conn, "select * from contact where user_id='$cur_user' limit 0,52");
+$total_record = mysqli_num_rows($total_data);
+// echo $total_record;
+
+$t_page = ceil($total_record / $limit);
+// echo $t_page;
+
+
+if (isset($_GET['page_no'])) {
+    $page_no = $_GET['page_no'];
+} else {
+    $page_no = 1;
+}
+
+$start = ($page_no - 1) * $limit; // (1-1)*6==0 first page,,,,,,(2-1)*6==6 ,,,,second page
+
+$res = mysqli_query($conn, "select id,name,contact_no FROM contact where user_id='$cur_user' limit $start,$limit");
 
 ?>
 
@@ -45,8 +63,9 @@ $res = mysqli_query($conn, "select id,name,contact_no FROM contact where user_id
             <input type="submit" value="sumbit" style="margin-bottom:30px;">
         </form> -->
 
+        <h6> Added By : <?php echo $user_email; ?></h6>
 
-        <table class="table table-sm">
+        <table class="table">
             <thead class="header">
                 <th>ID</th>
                 <th>Name</th>
@@ -69,10 +88,39 @@ $res = mysqli_query($conn, "select id,name,contact_no FROM contact where user_id
                     </td>
                     <td><a href="viewContact.php?d_id=<?php echo $row['id']; ?>"><i class="fa-regular fa-trash-can"></i></a>
                     </td>
-
                 </tr>
             <?php } ?>
         </table>
+
+
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <?php if ($page_no > 1) { ?>
+                    <li class="page-item">
+                        <a class="page-link" href="viewContact.php?page_no=<?php echo $page_no - 1; ?>"
+                            aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                <?php } ?>
+               
+                <?php for ($i = 1; $i <= $t_page; $i++) { ?>
+                    <li class="page-item"><a class="page-link"
+                            href="viewContact.php?page_no=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                <?php } ?>
+
+                <?php if ($page_no < $t_page) { ?>
+                <li class="page-item">
+                        <a class="page-link" href="viewContact.php?page_no=<?php echo $page_no + 1; ?>">
+                            <span>&raquo;</span>
+                        </a>
+                        
+                        
+                    </li>
+                    <?php } ?>
+            </ul>
+        </nav>
     </div>
     </div>
 
