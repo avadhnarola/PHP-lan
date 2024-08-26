@@ -69,84 +69,84 @@ $res = mysqli_query($conn, "select id,name,contact_no FROM contact where user_id
 </head>
 
 <body>
-    <div class="main">
-
-
-        <div class="head">
-            <h6>Added By: <?php echo $user_email; ?></h6>
-            <button type="submit" name="delete_all" class="button1" id="deleteBtn">
-                <div class="svg-wrapper-1">
-                    <div class="svg-wrapper">
-                        <i class="fa-solid fa-trash icon"></i>
+    <form action="" method="post">
+        <div class="main">
+            <div class="head">
+                <h6>Added By: <?php echo $user_email; ?></h6>
+                <button type="submit" name="delete_all" class="button1" id="deleteBtn" style="display:none;">
+                    <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <i class="fa-solid fa-trash icon"></i>
+                        </div>
                     </div>
-                </div>
-                <span>Delete All</span>
-            </button>
-        </div>
+                    <span>Delete All</span>
+                </button>
+            </div>
 
-        <form method="post" id="deleteForm">
-            <table class="table">
-                <thead class="header">
-                    <tr>
-                        <th>Select</th>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>Contact No</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php while ($row = mysqli_fetch_assoc($res)) { ?>
+            <form method="post" id="deleteForm">
+                <table class="table">
+                    <thead class="header">
                         <tr>
-                            <td><input type="checkbox" name="delete[]" value="<?php echo $row['id']; ?>"></td>
-                            <td><?php echo $row['id']; ?></td>
-                            <td><?php echo $row['name']; ?></td>
-                            <td><?php echo $row['contact_no']; ?></td>
-                            <td>
-                                <a href="contact.php?u_id=<?php echo $row['id']; ?>"><i
-                                        class="fa-regular fa-pen-to-square"></i></a>
-                                <a href="viewContact.php?d_id=<?php echo $row['id']; ?>"><i class="fa-regular fa-trash-can"
-                                        style="margin-left:7px;"></i></a>
-                            </td>
+                            <th>Select</th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Contact No</th>
+                            <th>Action</th>
                         </tr>
-                    <?php } ?>
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        <?php while ($row = mysqli_fetch_assoc($res)) { ?>
+                            <tr>
+                                <td><input type="checkbox" name="delete[]" value="<?php echo $row['id']; ?>"></td>
+                                <td><?php echo $row['id']; ?></td>
+                                <td><?php echo $row['name']; ?></td>
+                                <td><?php echo $row['contact_no']; ?></td>
+                                <td>
+                                    <a href="contact.php?u_id=<?php echo $row['id']; ?>"><i
+                                            class="fa-regular fa-pen-to-square"></i></a>
+                                    <a href="viewContact.php?d_id=<?php echo $row['id']; ?>"><i
+                                            class="fa-regular fa-trash-can" style="margin-left:7px;"></i></a>
+                                </td>
+                            </tr>
+                        <?php } ?>
+                    </tbody>
+                </table>
 
 
 
+            </form>
+    </form>
 
-        </form>
+    <nav aria-label="Page navigation example page">
+        <ul class="pagination mt-5">
+            <?php if ($page_no > 1) { ?>
+                <li class="page-item">
+                    <a class="page-link"
+                        href="viewContact.php?page_no=<?php echo $page_no - 1; ?>&search=<?php echo $search; ?>"
+                        aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+            <?php } ?>
 
-        <nav aria-label="Page navigation example page">
-            <ul class="pagination mt-5">
-                <?php if ($page_no > 1) { ?>
-                    <li class="page-item">
-                        <a class="page-link"
-                            href="viewContact.php?page_no=<?php echo $page_no - 1; ?>&search=<?php echo $search; ?>"
-                            aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                <?php } ?>
+            <?php for ($i = 1; $i <= $t_page; $i++) { ?>
+                <li class="page-item"><a class="page-link"
+                        href="viewContact.php?page_no=<?php echo $i; ?>&search=<?php echo $search; ?>"><?php echo $i; ?></a>
+                </li>
+            <?php } ?>
 
-                <?php for ($i = 1; $i <= $t_page; $i++) { ?>
-                    <li class="page-item"><a class="page-link"
-                            href="viewContact.php?page_no=<?php echo $i; ?>&search=<?php echo $search; ?>"><?php echo $i; ?></a>
-                    </li>
-                <?php } ?>
-
-                <?php if ($page_no < $t_page) { ?>
-                    <li class="page-item">
-                        <a class="page-link"
-                            href="viewContact.php?page_no=<?php echo $page_no + 1; ?>&search=<?php echo $search; ?>">
-                            <span>&raquo;</span>
-                        </a>
-                    </li>
-                <?php } ?>
-            </ul>
-        </nav>
+            <?php if ($page_no < $t_page) { ?>
+                <li class="page-item">
+                    <a class="page-link"
+                        href="viewContact.php?page_no=<?php echo $page_no + 1; ?>&search=<?php echo $search; ?>">
+                        <span>&raquo;</span>
+                    </a>
+                </li>
+            <?php } ?>
+        </ul>
+    </nav>
     </div>
+
 
     <script>
         $(document).ready(function () {
