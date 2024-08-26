@@ -1,10 +1,10 @@
-<?php 
-  include_once 'db.php';
+<?php
+include_once 'db.php';
 
-  session_start();
-  if(!isset($_SESSION['id'])){
-    header('location:login.php');
-  }
+session_start();
+if (!isset($_SESSION['id'])) {
+  header('location:login.php');
+}
 ?>
 
 
@@ -29,7 +29,7 @@
 
 <body class="body">
 
-  <div class="container-fluid"  style="background-color: #007bff;">
+  <div class="container-fluid" style="background-color: #007bff;">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="#" style="display: flex; justify-content: center; align-items: center;">
@@ -56,6 +56,23 @@
             </li>
           </ul>
         </div>
+
+
+        <form class="form-srch form1" method="get" class="srch">
+
+          <input class="input-src" placeholder="Search . . ." type="text" name="search">
+
+          <div class="btn-search">
+            <button type="submit">
+              <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-labelledby="search">
+                <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                  stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </form>
+
         <form class="d-flex" role="search">
           <a class="Btn" type="button" name="logout" href="logout.php">
 

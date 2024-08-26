@@ -1,6 +1,5 @@
 <?php
 include_once 'db.php';
-
 include_once 'index.php';
 
 if (!isset($_SESSION['id'])) {
@@ -8,7 +7,7 @@ if (!isset($_SESSION['id'])) {
 }
 
 if (isset($_GET['u_id'])) {
-    
+
     $id = $_GET['u_id'];
 
     $u_data = mysqli_query($conn, "select * from contact where id=$id");
@@ -31,9 +30,8 @@ if (isset($_POST['submit'])) {
         if (isset($_GET['u_id'])) {
 
             mysqli_query($conn, "update contact set name='$name',contact_no='$con_no' where id=$id");
-        }
-        else{
-            
+        } else {
+
             mysqli_query($conn, "insert into contact(name,contact_no,user_id) values('$name','$con_no','$cur_user');");
         }
 
@@ -58,8 +56,8 @@ if (isset($_POST['submit'])) {
         crossorigin="anonymous"></script>
 
 
-
     <link rel="stylesheet" href="assets/register.css">
+    <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="CSS/allmin/all.min.css">
 
 </head>
@@ -72,8 +70,8 @@ if (isset($_POST['submit'])) {
             <form class="form" method="post">
                 <input type="text" class="input" placeholder="Name" name="name" required
                     value="<?php echo @$u_data['name']; ?>">
-                <input type="number" class="input" placeholder="Contact No." maxlength="10" minlength="10" name="con_no" required
-                    value="<?php echo @$u_data['contact_no']; ?>">
+                <input type="number" class="input" placeholder="Contact No." maxlength="10" minlength="10" name="con_no"
+                    required value="<?php echo @$u_data['contact_no']; ?>">
 
                 <button class="form-btn" type="submit" name="submit">Save</button>
             </form>
