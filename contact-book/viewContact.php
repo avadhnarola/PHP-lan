@@ -2,6 +2,7 @@
 
 include_once 'db.php';
 include_once 'index.php';
+// include_once 'side.php';
 
 if (!isset($_SESSION['id'])) {
     header('location:login.php');
@@ -54,7 +55,7 @@ if (isset($_GET['page_no'])) {
 
 $start = ($page_no - 1) * $limit; // (1-1)*6==0 first page,,,,,,(2-1)*6==6 ,,,,second page
 
-$res = mysqli_query($conn, "select id,name,contact_no FROM contact where user_id='$cur_user' AND name like '%$search%' limit $start,$limit");
+$res = mysqli_query($conn, "select id,name,contact_no,saved FROM contact where user_id='$cur_user' AND name like '%$search%' limit $start,$limit");
 
 ?>
 <!DOCTYPE html>
@@ -91,29 +92,37 @@ $res = mysqli_query($conn, "select id,name,contact_no FROM contact where user_id
                             <th>ID</th>
                             <th>Name</th>
                             <th>Contact No</th>
+                            <th>Saved</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php while ($row = mysqli_fetch_assoc($res)) { ?>
+                        <?php if (mysqli_fetch_assoc($res) > 0) { ?>
+
+                            <?php while ($row = mysqli_fetch_assoc($res)) { ?>
+
+                                <tr>
+                                    <td><input type="checkbox" name="delete[]" value="<?php echo $row['id']; ?>"></td>
+                                    <td><?php echo $row['id']; ?></td>
+                                    <td><?php echo $row['name']; ?></td>
+                                    <td><?php echo $row['contact_no']; ?></td>
+                                    <td><?php echo $row['saved']; ?></td>
+                                    <td>
+                                        <a href="contact.php?u_id=<?php echo $row['id']; ?>"><i
+                                                class="fa-regular fa-pen-to-square"></i></a>
+                                        <a href="viewContact.php?d_id=<?php echo $row['id']; ?>"><i
+                                                class="fa-regular fa-trash-can" style="margin-left:7px;"></i></a>
+                                    </td>
+                                </tr>
+                            <?php } ?>
+
+                        <?php } else { ?>
                             <tr>
-                                <td><input type="checkbox" name="delete[]" value="<?php echo $row['id']; ?>"></td>
-                                <td><?php echo $row['id']; ?></td>
-                                <td><?php echo $row['name']; ?></td>
-                                <td><?php echo $row['contact_no']; ?></td>
-                                <td>
-                                    <a href="contact.php?u_id=<?php echo $row['id']; ?>"><i
-                                            class="fa-regular fa-pen-to-square"></i></a>
-                                    <a href="viewContact.php?d_id=<?php echo $row['id']; ?>"><i
-                                            class="fa-regular fa-trash-can" style="margin-left:7px;"></i></a>
-                                </td>
+                                <td colspan="6" style="text-align:center;"><?php echo "<h6>No Record Found</h6>"; ?></td>
                             </tr>
                         <?php } ?>
                     </tbody>
                 </table>
-
-
-
             </form>
     </form>
 
@@ -130,8 +139,10 @@ $res = mysqli_query($conn, "select id,name,contact_no FROM contact where user_id
             <?php } ?>
 
             <?php for ($i = 1; $i <= $t_page; $i++) { ?>
-                <li class="page-item"><a class="page-link"
-                        href="viewContact.php?page_no=<?php echo $i; ?>&search=<?php echo $search; ?>"><?php echo $i; ?></a>
+                <li class="page-item <?php if ($i == $page_no) echo 'active'; ?>">
+                    <a class="page-link" href="viewContact.php?page_no=<?php echo $i; ?>&search=<?php echo $search; ?>">
+                        <?php echo $i; ?>
+                    </a>
                 </li>
             <?php } ?>
 
@@ -148,13 +159,15 @@ $res = mysqli_query($conn, "select id,name,contact_no FROM contact where user_id
     </div>
 
 
+
     <script>
         $(document).ready(function () {
             $('input[type="checkbox"]').change(function () {
                 if ($('input[type="checkbox"]:checked').length > 0) {
-                    $('#deleteBtn').show();
+                    $('#deleteBtn').css("transition-duration", "0.3s");
+                    $('#deleteBtn').fadeIn(200);
                 } else {
-                    $('#deleteBtn').hide();
+                    $('#deleteBtn').fadeOut(300);
                 }
             });
         });

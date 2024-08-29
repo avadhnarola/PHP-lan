@@ -2,16 +2,13 @@
 
 include_once 'db.php';
 include_once 'index.php';
+// include_once 'side.php';
 
 if (!isset($_SESSION['id'])) {
     header('location:login.php');
 }
-
-
 $user_email = $_SESSION['email'];
-
-
-$res = mysqli_query($conn, "select  id,name,email,password,gender,contact_no,saved from register where email='$user_email'");
+$res = mysqli_query($conn, "select  id,name,email,password,gender,contact_no from register where email='$user_email'");
 
 ?>
 
@@ -38,7 +35,7 @@ $res = mysqli_query($conn, "select  id,name,email,password,gender,contact_no,sav
                 <th>Password</th>
                 <th>Gender</th>
                 <th>Contact No</th>
-                <th>Saved</th>
+           
                 <th colspan="2">Action</th>
             </thead>
 
@@ -59,9 +56,7 @@ $res = mysqli_query($conn, "select  id,name,email,password,gender,contact_no,sav
                     <td>
                         <?php echo $row['contact_no'] ?>
                     </td>
-                    <td>
-                        <?php echo $row['saved'] ?>
-                    </td>
+                   
                     <td><a href="register.php?u_id=<?php echo $row['id']; ?>"><i class="fa-regular fa-pen-to-square"></i></a>
                     </td>
 

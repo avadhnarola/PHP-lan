@@ -80,7 +80,10 @@
                     </path>
                 </svg>
                 <input placeholder="Password" name="password" type="password" class="input_field" required
-                    id="password_field">
+                    id="password_field"> 
+            </div>
+            <div class="input_container">
+                <a href="forgetPass.php">Forgot Passowrd?</a>
             </div>
             <button title="Sign In" type="submit" class="sign-in_btn" name="submit">
                 <span>Sign In</span>

@@ -7,7 +7,7 @@ if (isset($_GET['u_id'])) {
 
     $u_data = mysqli_query($conn, "select * from register where id=$id");
     $u_data = mysqli_fetch_assoc($u_data);
-    $arr_save = explode(",", $u_data['saved']);
+  
 
 
 }
@@ -18,15 +18,14 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email'];
     $gender = $_POST['gender'];
     $contact_no = $_POST['con_no'];
-    $save = implode(',', $_POST['save']);
 
     if (isset($_GET['u_id'])) {
-        mysqli_query($conn, "update register set name='$name',email='$email',password='$password',gender='$gender',contact_no='$contact_no',saved='$save' where id='$id' ");
+        mysqli_query($conn, "update register set name='$name',email='$email',password='$password',gender='$gender',contact_no='$contact_no' where id='$id' ");
         header('location:manageAccount.php');
 
 
     } else {
-        mysqli_query($conn, "insert into register(name,email,password,gender,contact_no,saved) values('$name','$email','$password','$gender','$contact_no','$save');");
+        mysqli_query($conn, "insert into register(name,email,password,gender,contact_no) values('$name','$email','$password','$gender','$contact_no');");
     }
     header('location:login.php');
 
@@ -86,28 +85,7 @@ if (isset($_POST['submit'])) {
                 </table>
                 <input type="number" class="input" placeholder="Contact No." name="con_no"
                     value="<?php echo @$u_data['contact_no']; ?>">
-                <table>
-                    <tr>
-                        <th>Saved : </th>
-                        <td>
-                            <input type="checkbox" value="gmail" name="save[]" style="margin-right: 5px;" <?php if (isset($_GET['u_id'])) {
-                                if (in_array("gmail", @$arr_save)) {
-                                    echo "checked";
-                                }
-                            } ?>>Gmail
-                            <input type="checkbox" value="phone" name="save[]" style="margin-right: 5px;" <?php if (isset($_GET['u_id'])) {
-                                if (in_array("phone", @$arr_save)) {
-                                    echo "checked";
-                                }
-                            } ?>>Phone
-                            <input type="checkbox" value="SIM" name="save[]" style="margin-right: 5px;" <?php if (isset($_GET['u_id'])) {
-                                if (in_array("SIM", @$arr_save)) {
-                                    echo "checked";
-                                }
-                            } ?>>SIM
-                        </td>
-                    </tr>
-                </table>
+               
 
 
                 <button class="form-btn" type="submit" name="submit">Log in</button>
