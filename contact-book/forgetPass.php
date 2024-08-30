@@ -36,15 +36,17 @@ echo @$msg;
 </head>
 
 <body>
-    <div class="reset-password-container">
-        <h2>Forget Password</h2>
-        <form action="#" method="post">
-            <div class="input-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <button type="submit" name="sendOTP">Send OTP</button>
-        </form>
+    <div class="cont">
+        <div class="reset-password-container">
+            <h2>Forget Password</h2>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" name="sendOTP">Send OTP</button>
+            </form>
+        </div>
     </div>
 </body>
 

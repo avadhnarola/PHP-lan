@@ -29,7 +29,7 @@ $mail->Username = "avadhnarola2515@gmail.com";
 //Password to use for SMTP authentication
 $mail->Password = "fsjq esby opzv hadk";
 //Set who the message is to be sent from
-$mail->setFrom('avadhnarola2515@gmail.com', 'First Last');
+$mail->setFrom('avadhnarola2515@gmail.com', 'Avadh Narola');
 //Set an alternative reply-to address
 $mail->addReplyTo('avadhnarola2515@gmail.com', 'Avadh Narola');
 //Set who the message is to be sent to
