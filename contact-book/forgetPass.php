@@ -1,42 +1,51 @@
-<?php 
+<?php
 
 include_once 'db.php';
 
 session_start();
 
-if(isset($_POST['sendOTP'])){
+if (isset($_POST['sendOTP'])) {
     $email = $_POST['email'];
 
-    $_SESSION['user_email']=$email;
+    $_SESSION['user_email'] = $email;
 
-    $data = mysqli_query($conn,"select * from register where email='$email'");
+    $data = mysqli_query($conn, "select * from register where email='$email'");
     $cnt = mysqli_num_rows($data);
 
-    if($cnt==1){
-        $row= mysqli_fetch_assoc($data);
+    if ($cnt == 1) {
+        $row = mysqli_fetch_assoc($data);
 
-        $_SESSION['user_id']=$row['id'];
+        $_SESSION['user_id'] = $row['id'];
         header('location:mailer/smtp.php');
-    }
-    else{
-        $msg="check your email address";
+    } else {
+        $msg = "check your email address";
     }
 }
 echo @$msg;
 
 ?>
 
-<form method="post">
-    <table>
-        <tr>
-            <td>Email : </td>
-            <td><input type="email" name="email"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>
-                <input type="submit" name="sendOTP" value="Send OTP">
-            </td>
-        </tr>
-    </table>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+    <link rel="stylesheet" href="assets/reset.css">
+</head>
+
+<body>
+    <div class="reset-password-container">
+        <h2>Forget Password</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit" name="sendOTP">Send OTP</button>
+        </form>
+    </div>
+</body>
+
+</html>
