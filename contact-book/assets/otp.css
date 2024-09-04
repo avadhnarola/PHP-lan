@@ -1,10 +1,19 @@
+* {
+    padding: 0%;
+    /* margin: 0; */
+    box-sizing: border-box;
+}
+
 body {
+    background-color: #f0f4f8;
+    font-family: Arial, sans-serif;
+}
+
+.cont {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f4f8;
-    font-family: Arial, sans-serif;
+    height: 500px;
     margin: 0;
 }
 
@@ -35,6 +44,7 @@ h2 {
     border: 1px solid #ddd;
     border-radius: 5px;
     outline: none;
+    width: 100%;
 }
 
 .otp-input:focus {
@@ -57,6 +67,23 @@ button:hover {
     background-color: #0056b3;
 }
 
-input[type="text"]::placeholder{
+input[type="text"]::placeholder {
     font-size: 15px;
+}
+
+.msg {
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+}
+
+.msg b {
+    font-size: 16px;
+    color: rgb(32, 32, 31);
+}
+
+h3 {
+    color: red;
+    text-align: center;
+    margin-top: 40px;
 }

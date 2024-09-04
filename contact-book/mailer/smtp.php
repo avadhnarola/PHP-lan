@@ -47,6 +47,7 @@ $mail->msgHTML($msg);
 $mail->AltBody = 'This is a plain-text message body';
 //Attach an image file
 $mail->addAttachment('images/phpmailer_mini.png');
+// $mail->addAttachment('images/phpmailer_mini.png');
 
 //send the message, check for errors
 if (!$mail->send()) {

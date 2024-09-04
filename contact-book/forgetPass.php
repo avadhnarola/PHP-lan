@@ -18,10 +18,10 @@ if (isset($_POST['sendOTP'])) {
         $_SESSION['user_id'] = $row['id'];
         header('location:mailer/smtp.php');
     } else {
-        $msg = "check your email address";
+        $msg = "<h3>check your email address</h3>";
     }
 }
-echo @$msg;
+
 
 ?>
 
@@ -36,6 +36,9 @@ echo @$msg;
 </head>
 
 <body>
+    <div>
+        <?php echo @$msg;?>
+    </div>
     <div class="cont">
         <div class="reset-password-container">
             <h2>Forget Password</h2>

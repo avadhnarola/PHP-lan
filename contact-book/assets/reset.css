@@ -6,15 +6,16 @@
 
 body {
     background-color: #e9ecef;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .cont {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 500px;
+    margin: 0;
 }
 
 .reset-password-container {
@@ -78,4 +79,10 @@ button {
 
 button:hover {
     background-color: #218838;
+}
+
+h3 {
+    color: red;
+    text-align: center;
+    margin-top: 40px;
 }
